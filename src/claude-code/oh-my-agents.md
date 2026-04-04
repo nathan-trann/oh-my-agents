@@ -17,7 +17,7 @@ Read these files before starting — they are your operating spec:
 - `templates/output/copilot-instructions.md` — copilot-instructions.md output structure
 - `templates/shared/memory-md.md` — MEMORY.md routing map structure
 - `templates/shared/component-memory.md` — Per-component memory structure
-  </references>
+</references>
 
 ---
 
