@@ -116,7 +116,7 @@ For areas not covered by Stages 1–2, apply structural heuristics:
    - Exports types, functions, or classes consumed by other directories
 
    **Name signals (supplementary — boost confidence for already-detected candidates):**
-   Common domain folder names include: `auth/`, `billing/`, `users/`, `api/`, `core/`, `shared/`, `common/`, `infrastructure/`, `domain/`, `features/`, `modules/`, `services/`, `handlers/`, `controllers/`, `routes/`. But do NOT limit detection to these names — any directory matching the structural signals above is a domain candidate regardless of its name (e.g., `centre-pay/`, `kyc-verification/`, `fleet-mgmt/`).
+   Common domain folder names include: `auth/`, `billing/`, `users/`, `api/`, `core/`, `shared/`, `common/`, `infrastructure/`, `domain/`, `features/`, `modules/`, `services/`, `handlers/`, `controllers/`, `routes/`. But do NOT limit detection to these names — any directory matching the structural signals above is a domain candidate regardless of its name (e.g., `checkout-flow/`, `notification-engine/`, `report-builder/`).
 
 3. **Test/doc separation:** `tests/`, `test/`, `spec/`, `__tests__/`, `docs/`, `scripts/` are NOT chunks — they are noted as cross-cutting directories.
 4. **Size threshold:** A directory with fewer than 5 files is not a standalone chunk — merge it with its parent.

@@ -103,7 +103,7 @@ For uncovered areas:
 1. If `src/`, `app/`, `lib/`, `pkg/`, `internal/`, `cmd/` exist → examine children as chunk candidates
 2. **Detect domains by structural signals first, names second:**
    - Structural signals (2+ required): has 5+ source files, contains entry point file (index.ts, main.py, etc.), has internal subdirectories, has co-located tests, low coupling to siblings, exports consumed by others
-   - Name signals (supplementary only): `auth/`, `billing/`, `api/`, `core/`, `shared/`, etc. — but any directory matching structural signals is a domain regardless of name (e.g., `centre-pay/`, `kyc-verification/`, `fleet-mgmt/`)
+   - Name signals (supplementary only): `auth/`, `billing/`, `api/`, `core/`, `shared/`, etc. — but any directory matching structural signals is a domain regardless of name (e.g., `checkout-flow/`, `notification-engine/`, `report-builder/`)
 3. `tests/`, `docs/`, `scripts/` → cross-cutting, NOT chunks
 4. Directories with <5 files → merge with parent
 

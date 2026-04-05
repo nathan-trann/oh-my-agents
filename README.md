@@ -175,7 +175,7 @@ oh-my-agents/
 
 **Why self-contained Copilot/Gemini prompts?** Claude Code can reference external files via `Read`. Copilot and Gemini cannot reliably reference files outside their prompt. So the Copilot agent and Gemini prompt inline all necessary logic and templates.
 
-**Why structural domain detection over name matching?** Hard-coded directory names (`auth/`, `billing/`, `api/`) miss arbitrary domain names like `centre-pay/` or `workers-sdk/`. Structural signals (file count, entry points, internal structure, coupling) detect any domain boundary regardless of naming.
+**Why structural domain detection over name matching?** Hard-coded directory names (`auth/`, `billing/`, `api/`) miss arbitrary domain names like `checkout-flow/` or `report-builder/`. Structural signals (file count, entry points, internal structure, coupling) detect any domain boundary regardless of naming.
 
 **Why all 10 overrides in every format?** These address universal failure modes in LLM-based coding agents, not Claude-specific bugs. Every agent benefits from phased execution, verification, and context management.
 
